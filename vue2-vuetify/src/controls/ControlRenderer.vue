@@ -2,6 +2,7 @@
   <v-text-field
     :value="control.data ? control.data : null"
     :label="control.label"
+    :error-messages="control.errors"
     clearable
     @input="onChange"
   >
@@ -18,7 +19,7 @@ import {
 import {
   RendererProps,
   rendererProps,
-  useJsonFormsControl,
+  useJsonFormsEnumControl,
 } from '@jsonforms/vue2';
 import { defineComponent } from '@vue/composition-api';
 import { VTextField } from 'vuetify/lib';
@@ -32,7 +33,7 @@ const controlRenderer = defineComponent({
     ...rendererProps(),
   },
   setup(props: RendererProps<ControlElement>) {
-    return useJsonFormsControl(props);
+    return useJsonFormsEnumControl(props);
   },
   methods: {
     onChange(newValue: string) {
