@@ -33,14 +33,14 @@ import {
   uiTypeIs,
   composePaths,
 } from '@jsonforms/core';
-import { VCheckbox, VContainer, VRow, VCol } from 'vuetify/lib';
+import { VCheckbox, VContainer, VRow, VCol } from 'vuetify/components';
 import {
   DispatchRenderer,
   rendererProps,
   RendererProps,
   useControl,
   ControlProps,
-} from '@jsonforms/vue2';
+} from '@jsonforms/vue';
 import { defineComponent } from '../vue';
 import { useVuetifyBasicControl } from '../util';
 

@@ -212,7 +212,7 @@ import {
   rendererProps,
   RendererProps,
   useJsonFormsArrayControl,
-} from '@jsonforms/vue2';
+} from '@jsonforms/vue';
 import { useVuetifyArrayControl } from '../util';
 import {
   VList,
@@ -237,7 +237,7 @@ import {
   VExpansionPanelHeader,
   VExpansionPanelContent,
   VVirtualScroll,
-} from 'vuetify/lib';
+} from 'vuetify/components';
 import { ValidationIcon, ValidationBadge } from '../controls/components/index';
 import { ErrorObject } from 'ajv';
 

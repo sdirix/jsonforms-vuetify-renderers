@@ -46,7 +46,7 @@
               :key="`${control.path}-${index}`"
               :class="styles.arrayList.item"
             >
-              <v-expansion-panel-header :class="styles.arrayList.itemHeader">
+              <div :class="styles.arrayList.itemHeader">
                 <v-container py-0>
                   <v-row
                     :style="`display: grid; grid-template-columns: ${
@@ -156,8 +156,8 @@
                     </v-col>
                   </v-row>
                 </v-container>
-              </v-expansion-panel-header>
-              <v-expansion-panel-content :class="styles.arrayList.itemContent">
+              </div>
+              <div :class="styles.arrayList.itemContent">
                 <dispatch-renderer
                   :schema="control.schema"
                   :uischema="foundUISchema"
@@ -166,7 +166,7 @@
                   :renderers="control.renderers"
                   :cells="control.cells"
                 />
-              </v-expansion-panel-content>
+              </div>
             </v-expansion-panel>
           </v-expansion-panels>
         </v-row>
@@ -228,7 +228,7 @@ import {
   rendererProps,
   useJsonFormsArrayControl,
   RendererProps,
-} from '@jsonforms/vue2';
+} from '@jsonforms/vue';
 import { useNested, useVuetifyArrayControl } from '../util';
 import {
   VCard,
@@ -248,12 +248,10 @@ import {
   VSpacer,
   VExpansionPanels,
   VExpansionPanel,
-  VExpansionPanelHeader,
-  VExpansionPanelContent,
-} from 'vuetify/lib';
+} from 'vuetify/components';
 import { ValidationIcon, ValidationBadge } from '../controls/components/index';
 import { ErrorObject } from 'ajv';
-import { ref } from '@vue/composition-api';
+import { ref } from '../vue';
 
 const controlRenderer = defineComponent({
   name: 'array-layout-renderer',
@@ -275,8 +273,6 @@ const controlRenderer = defineComponent({
     VSpacer,
     VExpansionPanels,
     VExpansionPanel,
-    VExpansionPanelHeader,
-    VExpansionPanelContent,
     VContainer,
     ValidationIcon,
     ValidationBadge,
@@ -360,8 +356,8 @@ export const entry: JsonFormsRendererRegistryEntry = {
 };
 </script>
 
-<style scoped>
+<!-- <style scoped>
 .notranslate {
   transform: none !important;
 }
-</style>
+</style> -->

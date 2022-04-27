@@ -46,9 +46,9 @@ import {
   rendererProps,
   useJsonFormsLayout,
   RendererProps,
-} from '@jsonforms/vue2';
+} from '@jsonforms/vue';
 import { useVuetifyLayout } from '../util';
-import { VCard, VCardTitle, VCardText } from 'vuetify/lib';
+import { VCard, VCardTitle, VCardText } from 'vuetify/components';
 
 const layoutRenderer = defineComponent({
   name: 'group-renderer',
@@ -93,7 +93,7 @@ export const entry: JsonFormsRendererRegistryEntry = {
 </script>
 
 <!-- Default styles for the 'nested' feature -->
-<style>
+<!-- <style>
 .group.group-bare {
   border: 0;
 }
@@ -105,4 +105,4 @@ export const entry: JsonFormsRendererRegistryEntry = {
 .group-align-left > .group-item {
   padding-left: 0;
 }
-</style>
+</style> -->

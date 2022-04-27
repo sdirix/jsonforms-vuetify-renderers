@@ -75,7 +75,7 @@ import {
   rendererProps,
   RendererProps,
   useJsonFormsOneOfControl,
-} from '@jsonforms/vue2';
+} from '@jsonforms/vue';
 import {
   VDialog,
   VCard,
@@ -88,7 +88,7 @@ import {
   VTab,
   VTabsItems,
   VTabItem,
-} from 'vuetify/lib';
+} from 'vuetify/components';
 import { computed, defineComponent, inject, ref } from '../vue';
 import { useVuetifyControl } from '../util';
 import { CombinatorProperties } from './components';

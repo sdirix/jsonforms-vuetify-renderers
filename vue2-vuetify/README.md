@@ -13,15 +13,15 @@ This is the JSON Forms Vue 2 Vuetify renderers package which provides a Vuetify 
 Install JSON Forms Core, Vue 2 and Vue 2 Vuetify Renderers.
 
 ```bash
-npm i --save @jsonforms/core @jsonforms/vue2 @jsonforms/vue2-vuetify
+npm i --save @jsonforms/core @jsonforms/vue @jsonforms/vue-vuetify
 ```
 
 Use the `json-forms` component for each form you want to render and hand over the renderer set.
 
 ```vue
 <script>
-import { JsonForms } from '@jsonforms/vue2';
-import { vuetifyRenderers } from '@jsonforms/vue2-vuetify';
+import { JsonForms } from '@jsonforms/vue';
+import { vuetifyRenderers } from '@jsonforms/vue-vuetify';
 
 const renderers = [
   ...vuetifyRenderers,
@@ -69,7 +69,7 @@ Vue.use(VueCompositionAPI);
 
 If note done yet, please [install Vuetify for Vue 2](https://vuetifyjs.com/en/getting-started/installation/).
 
-For more information on how JSON Forms can be configured, please see the [README of `@jsonforms/vue2`](https://github.com/eclipsesource/jsonforms/blob/master/packages/vue2/vue2/README.md).
+For more information on how JSON Forms can be configured, please see the [README of `@jsonforms/vue`](https://github.com/eclipsesource/jsonforms/blob/master/packages/vue2/vue2/README.md).
 
 ## License
 

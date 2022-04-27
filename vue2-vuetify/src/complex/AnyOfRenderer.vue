@@ -49,8 +49,8 @@ import {
   rendererProps,
   RendererProps,
   useJsonFormsAnyOfControl,
-} from '@jsonforms/vue2';
-import { VTabs, VTab, VTabsItems, VTabItem } from 'vuetify/lib';
+} from '@jsonforms/vue';
+import { VTabs, VTab, VTabsItems, VTabItem } from 'vuetify/components';
 import { defineComponent, ref } from '../vue';
 import { useVuetifyControl } from '../util';
 import { CombinatorProperties } from './components';

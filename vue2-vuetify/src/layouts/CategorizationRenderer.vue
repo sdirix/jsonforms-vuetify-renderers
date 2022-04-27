@@ -91,7 +91,7 @@ import {
   rendererProps,
   useJsonFormsLayout,
   RendererProps,
-} from '@jsonforms/vue2';
+} from '@jsonforms/vue';
 import { useAjv, useVuetifyLayout } from '../util';
 import {
   VContainer,
@@ -101,7 +101,7 @@ import {
   VTabItem,
   VRow,
   VCol,
-} from 'vuetify/lib';
+} from 'vuetify/components';
 
 const layoutRenderer = defineComponent({
   name: 'categorization-renderer',

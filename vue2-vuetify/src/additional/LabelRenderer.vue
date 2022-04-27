@@ -22,9 +22,9 @@ import {
   rendererProps,
   useJsonFormsLayout,
   RendererProps,
-} from '@jsonforms/vue2';
+} from '@jsonforms/vue';
 import { useVuetifyLayout, useTranslator } from '../util';
-import { VLabel } from 'vuetify/lib';
+import { VLabel } from 'vuetify/components';
 
 const labelRenderer = defineComponent({
   name: 'label-renderer',

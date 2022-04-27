@@ -19,7 +19,7 @@
       :error-messages="control.errors"
       :value="control.data"
       v-bind="vuetifyProps('v-text-field')"
-      @input="onChange"
+      @update:modelValue="onChange"
       @focus="isFocused = true"
       @blur="isFocused = false"
     />
@@ -38,10 +38,10 @@ import {
   rendererProps,
   useJsonFormsControl,
   RendererProps,
-} from '@jsonforms/vue2';
+} from '@jsonforms/vue';
 import { default as ControlWrapper } from './ControlWrapper.vue';
 import { useVuetifyControl } from '../util';
-import { VTextField } from 'vuetify/lib';
+import { VTextField } from 'vuetify/components';
 
 const controlRenderer = defineComponent({
   name: 'time-control-renderer',

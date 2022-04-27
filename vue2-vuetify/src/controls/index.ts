@@ -1,4 +1,4 @@
-export { default as AnyOfStringOrEnumControlRenderer } from './AnyOfStringOrEnumControlRenderer.vue';
+//export { default as AnyOfStringOrEnumControlRenderer } from './AnyOfStringOrEnumControlRenderer.vue';
 export { default as BooleanControlRenderer } from './BooleanControlRenderer.vue';
 export { default as BooleanToggleControlRenderer } from './BooleanToggleControlRenderer.vue';
 export { default as ControlWrapper } from './ControlWrapper.vue';
@@ -16,7 +16,7 @@ export { default as SliderControlRenderer } from './SliderControlRenderer.vue';
 export { default as StringControlRenderer } from './StringControlRenderer.vue';
 export { default as TimeControlRenderer } from './TimeControlRenderer.vue';
 
-import { entry as anyOfStringOrEnumControlRendererEntry } from './AnyOfStringOrEnumControlRenderer.vue';
+//import { entry as anyOfStringOrEnumControlRendererEntry } from './AnyOfStringOrEnumControlRenderer.vue';
 import { entry as booleanControlRendererEntry } from './BooleanControlRenderer.vue';
 import { entry as booleanToggleControlRendererEntry } from './BooleanToggleControlRenderer.vue';
 import { entry as dateControlRendererEntry } from './DateControlRenderer.vue';
@@ -34,7 +34,7 @@ import { entry as stringControlRendererEntry } from './StringControlRenderer.vue
 import { entry as timeControlRendererEntry } from './TimeControlRenderer.vue';
 
 export const controlRenderers = [
-  anyOfStringOrEnumControlRendererEntry,
+//  anyOfStringOrEnumControlRendererEntry,
   booleanControlRendererEntry,
   booleanToggleControlRendererEntry,
   dateControlRendererEntry,
